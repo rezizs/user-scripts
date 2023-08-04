@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         Hack DYXS
-// @version      0.1
+// @version      0.2
 // @author       You
 // @match        https://dyxs15.com/*
+// @match        https://waipian28.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -14,7 +15,7 @@
     var style = document.createElement('style');
     style.innerHTML = `
         body > a#dy_card_dy {display: none}
-        .player-rm.rm-list {display:none}
+        .player-rm,.rm-list {display:none}
         .player_pic_link {pointer-events: none!important; display: none;}
         .player_pic_box {
             min-height: 240px;
